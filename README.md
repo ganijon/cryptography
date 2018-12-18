@@ -1,4 +1,4 @@
-Fundamentals of Cryptography
+# Cryptography 
 
 ## Benefits:
 - confidentiality
@@ -59,48 +59,48 @@ Fundamentals of Cryptography
    pseudorandom numbers, 
  - Seed: a number/vector used to initialize Pseudo RNG
 
- ## Algorithms:
+## Algorithms:
 
-	1. Hash functions
- 	- converts any size of source -> shorter fixed length output
-  	- Cryptographically Secure Hash Function:
-   		- produces output from which producing source is not feasible.
-  		- no two inputs produces the same result.  
+1. Hash functions
+- converts any size of source -> shorter fixed length output
+- Cryptographically Secure Hash Function:
+	- produces output from which producing source is not feasible.
+	- no two inputs produces the same result.  
 
-	2. Cipher
-	- used for Encryption and Decryption
-	- Keys must be secure
-	- Symmetric cipher:  uses 1 key for Encryption/Decryption
-	- Asymmetric cipher: uses 2 related keys Encryption/Decryption
+2. Cipher
+- used for Encryption and Decryption
+- Keys must be secure
+- Symmetric cipher:  uses 1 key for Encryption/Decryption
+- Asymmetric cipher: uses 2 related keys Encryption/Decryption
 
-	3. Encoder
-	- transforms data from format-A -> format-B (e.g.: binary->text)
-	- doesn't provide security
+3. Encoder
+- transforms data from format-A -> format-B (e.g.: binary->text)
+- doesn't provide security
 
-	### Usage:
-	- Pseudo-Random Number Generators
-	- Create/manage Security Keys
-	- Create/verify Message Authentication Code 
-	- Create/verify Digital Signature
-	- Create/verify Digital Certificate
+### Usage:
+- Pseudo-Random Number Generators
+- Create/manage Security Keys
+- Create/verify Message Authentication Code 
+- Create/verify Digital Signature
+- Create/verify Digital Certificate
 
 ## Cryptographic Keys
 - used for lock(encrypt) or unlock(decrypt) data
 	
-	1. Symmetric key
-	- usage: ciphers, msg-auth-codes
-	- one key used for encrypt/decrypt
-	- must remain secret
+1. Symmetric key
+- usage: ciphers, msg-auth-codes
+- one key used for encrypt/decrypt
+- must remain secret
 	
 	
-	2. Asymmetric key
-	- usage: ciphers, dig-signatures
-	- pair of related keys: public & private
-		2.1. Public key
-		- publicly distributed
-		- used by public to encrypt plaintext / verify dig-signature
-		2.2. Private key
-		- must remain secret
-		- used only by its owner. 
-		- used to decrypt ciphertext / create dig-signature
-		- 
+2. Asymmetric key
+- usage: ciphers, dig-signatures
+- pair of related keys: public & private
+2.1. Public key
+- publicly distributed
+- used by public to encrypt plaintext / verify dig-signature
+2.2. Private key
+- must remain secret
+- used only by its owner. 
+- used to decrypt ciphertext / create dig-signature
+ 
