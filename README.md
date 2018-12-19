@@ -96,11 +96,11 @@
 2. Asymmetric key
 - usage: ciphers, dig-signatures
 - pair of related keys: public & private
-2.1. Public key
-- publicly distributed
-- used by public to encrypt plaintext / verify dig-signature
-2.2. Private key
-- must remain secret
-- used only by its owner. 
-- used to decrypt ciphertext / create dig-signature
+-- 2.1. Public key
+--- publicly distributed
+--- used by public to encrypt plaintext / verify dig-signature
+-- 2.2. Private key
+--- must remain secret
+--- used only by its owner. 
+--- used to decrypt ciphertext / create dig-signature
  
