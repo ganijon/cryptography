@@ -44,7 +44,7 @@
 - Pseudo-RNG:
   - used instead of hardware-RNG
   - use seeds as source of entropy:
-    - the best high-entropy source: hardware RNG
+    - the best high-entropy source: hardware-RNG
     - the next: OS pseudo-random device drivers 
     - the worst: software entropy source
 
@@ -55,18 +55,35 @@
   - kernel exploits 
 
 ## Terminology
- - Deterministic: a system/process that produces same/predictable output for given/variable initial state
- - Probabilistic: s system/process that produces non-deterministic output when initial state is known
- - Entropy: a measure of disorder (randomness)
- - Random Number: a number, where sequence of such #s are uniform and independent
- - True Random Number: a random number generated from non-deterministic source  
- - True RNG: a hardware RNG that produces True random number
- - Hardware RNG: a device that generates random numbers from physical processes, that are unpredictable
-   high entropy sources, and extracts statistically uniformly distributed random numbers.
- - Pseudorandom number: a number whose properties closely aproximate the properties of true random numbers
- - Cryptographically Secure Pseudo RNG: a Pseudo-RNG using seed source of high entropy, that produce unpredictable 
-   pseudorandom numbers, 
- - Seed: a number/vector used to initialize Pseudo RNG
+ Deterministic: 
+ > system/process that produces same/predictable output for given/variable initial state
+
+ Probabilistic:
+ > system/process that produces non-deterministic output when initial state is known
+ 
+ Entropy:
+ > measure of disorder (randomness)
+ 
+ Random Number: 
+ > number, where sequence of such #s are uniform and independent
+ 
+ True Random Number:
+ > random number generated from non-deterministic source  
+ 
+ True RNG: 
+ > hardware RNG that produces True random number
+ 
+ Hardware-RNG:
+ > device that generates random numbers from physical processes, that are unpredictable high entropy sources, and extracts statistically uniformly distributed random numbers.
+ 
+ Pseudorandom number: 
+ > number whose properties closely aproximate the properties of true random numbers
+ 
+ Cryptographic pseudo-RNG: 
+ > Pseudo-RNG using seed source of high entropy, that produce unpredictable pseudorandom numbers
+ 
+ Seed: 
+ > number/vector used to initialize pseudo-RNG
 
 ## Algorithms:
 
